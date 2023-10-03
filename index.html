@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Números Aleatórios</title>
-    <link rel="stylesheet" href="trabalho.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Site</title>
 </head>
 <body>
-    <h1>Gerador de Números Aleatórios</h1>
-    <form id="formularioAleatorio">
-        <label for="valorMinimo">Valor Mínimo:</label>
-        <input type="number" id="valorMinimo" required>
-        <br>
-        <label for="valorMaximo">Valor Máximo:</label>
-        <input type="number" id="valorMaximo" required>
-        <br>
-        <label for="negativo">Permitir Números Negativos:</label>
-        <input type="checkbox" id="negativo">
-        <br>
-        <label for="decimal">Permitir Números Decimais:</label>
-        <input type="checkbox" id="decimal">
-        <br>
-        <button type="button" onclick="gerarNumeroAleatorio()">Gerar</button>
-    </form>
-    <p class="mostrar">Número Aleatório Gerado: <span id="resultado"></span></p>
-
+    <header>
+        <div class="logo">
+            <img src="imagens/pngegg 1.png" alt="Logo da Empresa">
+            <img src="imagens/UNINASSAU.png" alt="Logo da Empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato/Localização</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conteudo-home">
+        <h1>Gerador de Números Aleatórios</h1>
+        <form id="formularioAleatorio">
+            <label for="valorMinimo">Valor Mínimo:</label>
+            <input type="number" id="valorMinimo" required>
+            <br>
+            <label for="valorMaximo">Valor Máximo:</label>
+            <input type="number" id="valorMaximo" required>
+            <br>
+            <label for="negativo">Permitir Números Negativos:</label>
+            <input type="checkbox" id="negativo">
+            <br>
+            <label for="decimal">Permitir Números Decimais:</label>
+            <input type="checkbox" id="decimal">
+            <br>
+            <button type="button" onclick="gerarNumeroAleatorio()">Gerar</button>
+        </form>
+        <p class="mostrar">Número Aleatório Gerado: <span id="resultado"></span></p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Meu Site</p>
+    </footer>
     <script>
         function gerarNumeroAleatorio() {
             const valorMinimo = parseFloat(document.getElementById("valorMinimo").value);
@@ -62,5 +79,5 @@
         }
     </script>
 </body>
-
 </html>
+
